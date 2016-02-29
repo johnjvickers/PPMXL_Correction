@@ -15,11 +15,7 @@ de_fit = np.genfromtxt('pmd.csv', delimiter=',')
 #										(1,2)_imag, (2,2)_real, (2,2)_imag, (2,2)_real, (0,3)...
 #we do not use negative orders as they add no new information
 #the zeroth orders never have imaginary information
-#121 coefficients per shell.
 
-#These coefficients could change by submission.
-
-#just in case I want to change how many harmonics are fit.
 harm_degree = 8
 
 
