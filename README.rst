@@ -28,3 +28,8 @@ This should create a new file named vc_qso_recentered.fit
 $ diff vc_qso_recentered.fit vc_qso_recentered_original.fit
 
 Should show the rubric file, and the file created on your machine are identical.
+
+
+Contact
+-----
+johnjvickersATshaoDOTacDOTcn
