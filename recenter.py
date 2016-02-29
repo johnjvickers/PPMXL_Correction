@@ -12,7 +12,7 @@ de_fit = np.genfromtxt('pmd.csv', delimiter=',')
 #These files are 7 lines long, the first column is the magnitude slice it was
 #fit to. After that the columns are leading coefficients for:
 #sph(order, degree) = (0,0), (0,1), (1,1)_real, (1,1)_imag, (0,2), (1,2)_real,
-#										(1,2)_imag, (2,2)_real, (2,2)_imag, (2,2)_real, (0,3)...
+# (1,2)_imag, (2,2)_real, (2,2)_imag, (0,3)...
 #we do not use negative orders as they add no new information
 #the zeroth orders never have imaginary information
 
