@@ -47,12 +47,6 @@ Out[4]: -2.2456262454584768
 
 In [5]: np.average(d['pmd_corr_mas'])
 Out[5]: -0.18019566627583183
-
-In [4]: np.average(d['pmd_mas'])
-Out[4]: -2.2456262454584768
-
-In [5]: np.average(d['pmd_corr_mas'])
-Out[5]: -0.18019566627583183
 ```
 
 Note on the PPMXL Database
