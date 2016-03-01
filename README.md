@@ -28,7 +28,7 @@ This should create a new file named vc_qso_recentered.csv
 
 Should show the rubric file and the file created on your machine are identical.
 
-Note that these test data are from Veron-Cetty+2010 (located at: http://cdsarc.u-strasbg.fr/viz-bin/VizieR-3?-source=VII/258)
+Note that these test data are from Veron+2010 (located at: http://cdsarc.u-strasbg.fr/viz-bin/VizieR-3?-source=VII/258)
 
 
 Another qualitative test would be to open the data in iPython and do something along the lines of:
