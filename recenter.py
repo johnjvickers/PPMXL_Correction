@@ -1,5 +1,5 @@
 import numpy as np
-import pyfits
+# import pyfits
 import os
 from numpy.lib import recfunctions as rfs
 from scipy.special import sph_harm
@@ -124,10 +124,11 @@ def _test():
 	ra_fit = np.genfromtxt('pmr.csv', delimiter=',')
 	de_fit = np.genfromtxt('pmd.csv', delimiter=',')
 
-	infile = 'vc_qso.fit'
-	outfile = 'vc_qso_recentered.fit'
+	# infile = 'vc_qso.fit'
+	# outfile = 'vc_qso_recentered.fit'
 
-	data_pre = pyfits.getdata(infile)
+	# data_pre = pyfits.getdata(infile)
+	data_pre = np.genfromtxt('vc_qso.csv', delimiter=',', names=True)
 
 	pmr_new, pmd_new = [], []
 	for star in data_pre:
@@ -142,9 +143,13 @@ def _test():
 	data_post = rfs.append_fields(
 		data_pre, names=['pmr_corr_mas', 'pmd_corr_mas'],
 		data=[pmr_new, pmd_new], dtypes=['>f4','>f4'], usemask=False
-		)
+	)
 
-	pyfits.writeto(outfile, data_post, clobber=True)
+	# pyfits.writeto(outfile, data_post, clobber=True)
+	np.savetxt(
+		'vc_qso_recentered.csv', data_post, delimiter=',', comments='',
+		header='pmra,pmde,jmag,ra,de,pmr_mas,pmd_mas,pmr_corr_mas,pmd_corr_mas'
+	)
 
 
 if __name__ == '__main__':

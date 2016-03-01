@@ -13,8 +13,6 @@ Dependencies
 
 - numpy
 - scipy
-- pyfits (for the test files)
-
 
 Tests
 -----
@@ -23,12 +21,13 @@ Make sure the above dependencies are installed. In the PPMXL_Correction director
 
 $ python recenter.py
 
-This should create a new file named vc_qso_recentered.fit
+This should create a new file named vc_qso_recentered.csv
 
-$ diff vc_qso_recentered.fit vc_qso_recentered_original.fit
+$ diff vc_qso_recentered.fit vc_qso_recentered_original.csv
 
-Should show the rubric file, and the file created on your machine are identical.
+Should show the rubric file and the file created on your machine are identical.
 
+Note that these test data are from Veron-Cetty+2010 (located at: http://cdsarc.u-strasbg.fr/viz-bin/VizieR-3?-source=VII/258)
 
 Contact
 -----
