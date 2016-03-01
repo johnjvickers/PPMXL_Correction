@@ -33,27 +33,27 @@ Note that these test data are from Veron-Cetty+2010 (located at: http://cdsarc.u
 
 Another qualitative test would be to open the data in iPython and do something along the lines of:
 
-  ```python
-  In [1]: d = np.genfromtxt('vc_qso_recentered.csv', delimiter=',', names=True)
+```python
+In [1]: d = np.genfromtxt('vc_qso_recentered.csv', delimiter=',', names=True)
 
-  In [2]: np.average(d['pmr_mas'])
-  Out[2]: -0.70694456500066327
+In [2]: np.average(d['pmr_mas'])
+Out[2]: -0.70694456500066327
 
-  In [3]: np.average(d['pmr_corr_mas'])
-  Out[3]: 0.033116644977046202
+In [3]: np.average(d['pmr_corr_mas'])
+Out[3]: 0.033116644977046202
 
-  In [4]: np.average(d['pmd_mas'])
-  Out[4]: -2.2456262454584768
+In [4]: np.average(d['pmd_mas'])
+Out[4]: -2.2456262454584768
 
-  In [5]: np.average(d['pmd_corr_mas'])
-  Out[5]: -0.18019566627583183
+In [5]: np.average(d['pmd_corr_mas'])
+Out[5]: -0.18019566627583183
 
-  In [4]: np.average(d['pmd_mas'])
-  Out[4]: -2.2456262454584768
+In [4]: np.average(d['pmd_mas'])
+Out[4]: -2.2456262454584768
 
-  In [5]: np.average(d['pmd_corr_mas'])
-  Out[5]: -0.18019566627583183
-  ```
+In [5]: np.average(d['pmd_corr_mas'])
+Out[5]: -0.18019566627583183
+```
 
 
 Contact
