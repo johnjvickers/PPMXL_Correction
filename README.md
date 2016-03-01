@@ -55,6 +55,10 @@ In [5]: np.average(d['pmd_corr_mas'])
 Out[5]: -0.18019566627583183
 ```
 
+Note on the PPMXL Database
+-----
+We are currently working to implement the correction across the PPMXL database.
+http://dc.zah.uni-heidelberg.de/ppmxl/q/cone/info
 
 Contact
 -----
